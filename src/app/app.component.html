@@ -1,0 +1,11 @@
+<p>Array input form: 1,2,3...,n</p>
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+  <input name="numbers" type="text" ngModel>
+  <br>
+  <select name="order" ngModel>
+    <option value="ASC">Ascending</option>
+    <option value="DESC">Descending</option>
+  </select>
+  <button>Submit</button>
+</form>
+<div>{{sortedArray}}</div>
